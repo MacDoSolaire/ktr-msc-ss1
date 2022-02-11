@@ -1,6 +1,7 @@
 package exceptions;
 
 public class Mage extends Character{
+    //Constructor
     public Mage(String name) {
         super(name);
         RPGClass = "Mage";
@@ -11,6 +12,7 @@ public class Mage extends Character{
         System.out.println(getName() + ": May the gods be with me.");
     }
 
+    //Method that takes a string as argument, and prints text
     public void attack(String word) throws WeaponException {
         if (word.isEmpty()){
             throw new WeaponException(getName() + ": I refuse to fight with my bare hands.");
@@ -23,6 +25,7 @@ public class Mage extends Character{
         }
     }
 
+    //Method that call the attack methods, catch the exception and print the message.
     public void tryToAttack(String word){
         try {
             attack(word);
@@ -31,7 +34,7 @@ public class Mage extends Character{
         }
     }
 
-    //Interface
+    //Interface methods
     @Override
     public void moveBack() {
         System.out.println(getName() + ": moves back furtively.");

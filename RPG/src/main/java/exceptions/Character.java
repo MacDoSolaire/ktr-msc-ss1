@@ -50,6 +50,7 @@ public abstract class Character implements Movable {
         System.out.println(getName() + ": Rrrrrrrrr....");
     }
 
+    //Method that call the attack methods, catch the exception and print the message.
     public void tryToAttack(String word){
         try {
             attack(word);
@@ -58,7 +59,7 @@ public abstract class Character implements Movable {
         }
     }
 
-    //Interface
+    //Interface methods
     @Override
     public void moveBack() {
         System.out.println(getName() + ": moves back");
