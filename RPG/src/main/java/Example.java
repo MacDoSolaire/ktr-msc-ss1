@@ -1,6 +1,6 @@
-import RPGClass.Character;
-import RPGClass.Mage;
-import RPGClass.Warrior;
+import exceptions.Character;
+import exceptions.Mage;
+import exceptions.Warrior;
 
 public class Example {
     public static void main(String[] args) {

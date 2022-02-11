@@ -1,4 +1,4 @@
-package RPGClass;
+package exceptions;
 
 public abstract class Character implements Movable {
     //Create class

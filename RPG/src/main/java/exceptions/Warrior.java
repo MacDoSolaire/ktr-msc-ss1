@@ -1,6 +1,4 @@
-package RPGClass;
-
-import java.util.Objects;
+package exceptions;
 
 public class Warrior extends Character{
     public Warrior(String name) {

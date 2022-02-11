@@ -1,4 +1,4 @@
-package RPGClass;
+package exceptions;
 
 public interface Movable {
     void moveRight();

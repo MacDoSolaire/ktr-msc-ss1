@@ -1,4 +1,4 @@
-package RPGClass;
+package exceptions;
 
 public class Mage extends Character{
     public Mage(String name) {
