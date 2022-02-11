@@ -1,6 +1,7 @@
-Example.class
-RPGClass/Warrior.class
-RPGClass/Movable.class
+exceptions/Warrior.class
 TestCharacter.class
-RPGClass/Character.class
-RPGClass/Mage.class
+exceptions/Movable.class
+exceptions/Character.class
+Example.class
+exceptions/WeaponException.class
+exceptions/Mage.class

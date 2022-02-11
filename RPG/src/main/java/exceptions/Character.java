@@ -46,8 +46,16 @@ public abstract class Character implements Movable {
     }
 
     //Method that takes a string as argument, and prints text
-    public void attack(String word){
+    public void attack(String word) throws WeaponException {
         System.out.println(getName() + ": Rrrrrrrrr....");
+    }
+
+    public void tryToAttack(String word){
+        try {
+            attack(word);
+        } catch (WeaponException e) {
+            e.printStackTrace();
+        }
     }
 
     //Interface

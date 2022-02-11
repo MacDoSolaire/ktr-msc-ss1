@@ -11,12 +11,23 @@ public class Mage extends Character{
         System.out.println(getName() + ": May the gods be with me.");
     }
 
-    public void attack(String word){
+    public void attack(String word) throws WeaponException {
+        if (word.isEmpty()){
+            throw new WeaponException(getName() + ": I refuse to fight with my bare hands.");
+        }
         if(word.equals("magic") || word.equals("wand")){
             System.out.println(getName() + ": Rrrrrrrrr....");
             System.out.println(getName() + ": Feel the power of my " + word + "!");
         }else{
-            System.out.println(getName() + ": can't attack");
+            System.out.println(getName() + ": I don't need this stupid " + word + "! Don't misjudge my powers!");
+        }
+    }
+
+    public void tryToAttack(String word){
+        try {
+            attack(word);
+        } catch (WeaponException e) {
+            e.printStackTrace();
         }
     }
 

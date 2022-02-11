@@ -11,12 +11,23 @@ public class Warrior extends Character{
         System.out.println(getName() + ": My name will go down in history!");
     }
 
-    public void attack(String word){
+    public void attack(String word) throws WeaponException {
+        if (word.isEmpty()){
+            throw new WeaponException(getName() + ": I refuse to fight with my bare hands.");
+        }
         if(word.equals("hammer") || word.equals("sword")){
             System.out.println(getName() + ": Rrrrrrrrr....");
             System.out.println(getName() + ": I'll crush you with my " + word + "!");
         }else{
-            System.out.println(getName() + ": can't attack");
+            System.out.println(getName() + ": A " + word + "?? What should I do with this?!");
+        }
+    }
+
+    public void tryToAttack(String word){
+        try {
+            attack(word);
+        } catch (WeaponException e) {
+            e.printStackTrace();
         }
     }
 
