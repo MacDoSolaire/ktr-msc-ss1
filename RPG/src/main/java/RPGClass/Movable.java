@@ -5,4 +5,8 @@ public interface Movable {
     void moveLeft();
     void moveForward();
     void moveBack();
+
+    default void unsheathe() {
+        return;
+    }
 }

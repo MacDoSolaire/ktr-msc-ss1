@@ -70,4 +70,10 @@ public abstract class Character implements Movable {
     public void moveRight() {
         System.out.println(getName() + ": moves right");
     }
+
+    @Override
+    public void unsheathe() {
+        Movable.super.unsheathe();
+        System.out.println(getName() + ": unsheathes his weapon.");
+    }
 }
