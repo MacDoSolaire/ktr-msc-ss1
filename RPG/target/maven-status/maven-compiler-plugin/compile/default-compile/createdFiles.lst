@@ -1,5 +1,6 @@
 Example.class
 RPGClass/Warrior.class
+RPGClass/Movable.class
 TestCharacter.class
 RPGClass/Character.class
 RPGClass/Mage.class

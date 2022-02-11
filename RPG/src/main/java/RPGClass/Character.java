@@ -1,6 +1,6 @@
 package RPGClass;
 
-public abstract class Character {
+public abstract class Character implements Movable {
     //Create class
 
     //Attributes
@@ -50,4 +50,24 @@ public abstract class Character {
         System.out.println(getName() + ": Rrrrrrrrr....");
     }
 
+    //Interface
+    @Override
+    public void moveBack() {
+        System.out.println(getName() + ": moves back");
+    }
+
+    @Override
+    public void moveForward() {
+        System.out.println(getName() + ": moves forward");
+    }
+
+    @Override
+    public void moveLeft() {
+        System.out.println(getName() + ": moves left");
+    }
+
+    @Override
+    public void moveRight() {
+        System.out.println(getName() + ": moves right");
+    }
 }
